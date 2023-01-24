@@ -3,18 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Jedidiah Lafond"/>
+    <meta name="description" content="Coding Bootcamp Student Study Guide">
+    <meta name="keywords" content="HTML,CSS, Git, JavaScript, Study Guide" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prework Study Guide</title>
+    <title>Coding Bootcamp Study Guide</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header id="top">
-      <h1>Prework Study Guide</h1>
-      <img src="assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h1>Coding Bootcamp Study Guide</h1>
+      <img src="assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." width="200" height="190"/>
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section id="HTML" class="html">
+        <h2>HTML</h2>
+        <p>
+          <h3>Basic HTML Syntax</h3>
+          <ul>
+            <li>Content is contained between an opening tag (&lt;head&gt;) and closing tag (&lt;/head&gt;).</li>
+          </ul>
+          <div>
+            <aside>
+              <div>
+                <p>
+                  <details>
+                    <summary>
+                      How to Add &lt;&gt; to HTML text
+                    </summary>
+                    <p>
+                      <ul>
+                        <li>For &lt; type &amp;lt;</li>
+                        <li>For &gt; type &amp;gt;</li>
+                      </ul>
+                    </p>
+                  </details>
+                </p>
+              </div>
+            </aside>
+          </div>
+        </p>
+        <p>
+          <h3>&lt;head&gt;</h3>
+            <ul>
+              <li>The head element contains information about the webpage.</li>
+            </ul>
+          <h3>&lt;body&gt;</h3>
+            <ul>
+              <li>The body element represents the visible content shown to the user.</li>
+              <li>The body contains three child elements. They are as follows:
+                <ol>
+                  <li>&lt;header&gt;</li>
+                    <ul>
+                      <li>Header</li>
+                    </ul>
+                  <li>&lt;main&gt;</li>
+                    <ul>
+                      <li>This is where the bulk oof the content on the page will go.</li>
+                    </ul>
+                  <li>&lt;footer&gt;</li>
+                    <ul>
+                      <li>This appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation</li>
+                    </ul>
+                </ol>
+              </li>
+            </ul>
+        </p>
+        <p>
+          <h3>Other Common Elements</h3>
+          <ul>
+            <li>&lt;h1-6&gt; these are used as headings the lower the number the larger the text.</li>
+            <li>&lt;p&gt; p stands for a paragraph.</li>
+            <li>&lt;span&gt; is used to create inline division.</li>
+            <li>&lt;div&gt; is used to create a division in the page.</li>
+            <li>&lt;aside&gt; </li>
+            <li>&lt;br&gt; this forces a new line in the block element</li>
+          </ul>
+        </p>
+        <p>
+          <h3>List Elements</h3>
+          <ul>
+            <li>&lt;ul&gt; this is an unordered list</li>
+            <li>&lt;ol&gt; this is an ordered list</li>
+            <li>&lt;li&gt; is a list element that is a child to &lt;ol&gt; &lt;ul&gt;</li>
+          </ul>
+        </p>
+        <p>
+          <h3>Images</h3>
+          <ul>
+            <li>&lt;image&gt; this tag is used to link to a image</li>
+               <p>&nbsp;&nbsp;&nbsp;Be sure to fill in the attributes in the &lt;image&gt; of the image will not load properly.<br> &nbsp;&nbsp;&nbsp;Some common attributes are:
+                <ul>
+                  <li>src for the source of the image</li>
+                  <li>alt this describes the image if the image fails to load</li>
+                  <li>width (generally defined in pixels)</li>
+                  <li>height (generally defined in pixels)</li>
+                </ul>
+              </p>
+            <li>&lt;figure&gt; images are often nested inside a figure element</li>
+            <li>&lt;figcaption&gt; is used to put a caption on the image</li>
+          </ul>
+        </p>
+        <p>
+          <h3>Links or Anchors</h3>
+          <ul>
+            <li>&lt;a&gt; is an anchor tag. It is used to link elements on the same page and the web.</li>
+            <li>Common Attributes</li>
+              <ul>
+                <li>href this is where the link goes. The link doesn't go between the opening and closing anchor tags.</li>
+              </ul>
+          </ul>
+        </p>
+      </section>
+      <section id="CSS" class="css">
+        <h2>CSS</h2>
+        <p>
+          <ul>
+            <li>Enter your CSS notes here.</li>
+          </ul>
+        </p>
+      </section>
+      <section id="Git" class="git">
+        <h2>Git</h2>
+        <p>
+          <ul>
+            <li>git status: checks what branch we are currently on</li>
+            <li>git checkout -b branch name: creates a new branch and switches to it</li>
+          </ul>
+        </p>
+      </section>
+      <section id="JavaScript" class="js">
+        <h2>JavaScript</h2>
+        <p>
+          <ul>
+            <li>Enter your JavaScript notes here.</li>
+          </ul>
+        </p>
+      </section>
+      <div>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FLos_Angeles&src=ZTU1OGYyZjA5NmYyZTY1NDU3NWIyM2U5NGE1YzgzODAwNDA3YTAyYmU2MDZjZWJmYjZkZDU4YWU3ZDcwMTFkMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342"
+                style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
     </main>
-
     <footer>
       <p>I can code!</p>
     </footer>
