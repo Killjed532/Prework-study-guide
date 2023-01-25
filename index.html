@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Jedidiah Lafond"/>
     <meta name="description" content="Coding Bootcamp Student Study Guide">
-    <meta name="keywords" content="HTML,CSS, Git, JavaScript, Study Guide" />
+    <meta name="keywords" content="HTML, CSS, Git, JavaScript, Study Guide" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Bootcamp Study Guide</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
   </head>
   <body>
     <header >
@@ -29,11 +29,11 @@
             </ul>
         </nav>
       </p>
-      <br>
+
           <img src="assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." width="200" height="190"/>
     </header>
     <main>
-      <section id="HTML" class="html" class="card">
+      <section id="HTML" class="html">
         <h2>HTML</h2>
         <p>
           <h3>Basic HTML Syntax</h3>
@@ -64,6 +64,15 @@
           <h3>&lt;head&gt;</h3>
             <ul>
               <li>The head element contains information about the webpage.</li>
+              <li>In this section a developer would add the following:</li>
+              <ul>
+                <li>&lt;link&gt; to link to an external file</li>
+                  <ul>
+                    <li>The rel attribute specifies the relationship between the current document and the linked document.</li>
+                    <li>The href attribute specifies the location of the external resource.</li>
+                  </ul>
+                <li>&lt;meta&gt; this would contain the author, keywords, a description, and information to assist a browser in rendering the page correctly.</li>
+              </ul>
             </ul>
           <h3>&lt;body&gt;</h3>
             <ul>
@@ -132,15 +141,25 @@
           </ul>
         </p>
       </section>
-      <section id="CSS" class="css" class="card">
+      <section id="CSS" class="css">
         <h2>CSS</h2>
+        <h3>Basic CSS</h3>
+        <h4>Box Styling</h4>
         <p>
           <ul>
-            <li>Enter your CSS notes here.</li>
+            <li>margin is the space around the border.</li>
+            <li>padding is the space around the element between the border and the element</li>
+            <li>border is the border around the element. To create a border choose a thickness, a border type, and color.</li>
+            <img src="assets/boxStyling.png" alt="Box Styling" class="ulImg">
+            <li>box-shadow is the shadow of the box.</li>
+              <ul>
+                <li>/* offset-x | offset-y | blur-radius | spread-radius | color */</li>
+                <li><code>box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);</code></li>
+              </ul>
           </ul>
         </p>
       </section>
-      <section id="Git" class="git" class="card">
+      <section id="Git" class="git">
         <h2>Git</h2>
         <p>
           <ul>
@@ -149,7 +168,7 @@
           </ul>
         </p>
       </section>
-      <section id="JavaScript" class="js" class="card">
+      <section id="JavaScript" class="js">
         <h2>JavaScript</h2>
         <p>
           <ul>
@@ -157,6 +176,28 @@
           </ul>
         </p>
       </section>
+      <section id="External Resources">
+        <h2>Recommended External Resources</h2>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
+            <ul>
+              <li>This resource has a plethora of information on all the topics above and more.</li>
+            </ul>
+          <li><a href="https://www.w3.org/">W3C</a></li>
+            <ul>
+              <li>The World Wide Web Consortium is an international community that develops open standards to ensure the long-term growth of the Web.</li>
+            </ul>
+          <li><a href="https://stackoverflow.com/">StackOverflow</a></li>
+            <ul>
+              <li>This resource is a forum that has answered many of the same questions you may have with answers on how they resolved those errors or blocks.</li>
+            </ul>
+          <li><a href="https://chat.openai.com/chat">ChatGPT</a></li>
+            <ul>
+              <li>Although contentious in the developing field, this is a great resource that can cut down on time googling for the answer if you phrase the question correctly.</li>
+            </ul>
+        </ul>
+      </section>
+
       <div class="calendar" id="calendar">
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FLos_Angeles&src=ZTU1OGYyZjA5NmYyZTY1NDU3NWIyM2U5NGE1YzgzODAwNDA3YTAyYmU2MDZjZWJmYjZkZDU4YWU3ZDcwMTFkMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342"
                 style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
