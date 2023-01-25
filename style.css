@@ -51,6 +51,8 @@ ol {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    position: relative;
+    border: none;
 }
 
 .menu-button {
@@ -58,7 +60,7 @@ ol {
     border: none;
     width: 48px;
     height: 48px;
-    display: flex;
+    display: grid;
     justify-content: end;
     flex-flow: column;
     align-items: center;
@@ -106,18 +108,23 @@ ol {
 :is(header:hover, a:focus-within) nav {
     display: block;
 }
-
 nav {
     display: none;
     transform-origin: top center;
     animation: showMenu  0.5s linear forwards;
     background-color: var(--HEADER-BGCOLOR);
-}
 
+}
 nav ul {
     list-style-type: none;
     display: flex;
     flex-flow: column nowrap;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    z-index:1;
+    background-color: black;
 }
 
 nav li {
