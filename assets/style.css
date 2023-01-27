@@ -57,7 +57,6 @@ section {
     margin: 30px 20px;
     text-align: justify-all;
     list-style-position: inside;
-    white-space: nowrap;
 }
 .ulImg {
     block-size: 100%;
@@ -79,6 +78,13 @@ header img {
     height: 100px;
     margin: 30px auto;
 
+}
+.headerH2 {
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+    text-shadow: none;
+    border-bottom: none;
 }
 .calendar {
     display: grid;
