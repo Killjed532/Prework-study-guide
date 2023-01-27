@@ -33,23 +33,32 @@ h1 {
     font-size: 3.5rem;
     font-weight: 900;
     width: 100%;
+    margin: 0;
 }
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     display: block;
     text-align: center;
     text-shadow: var(--SHADOW-H2);
     border-bottom: 3px ridge var(--BORDER-COLOR);
     border-bottom-style: groove;
 }
-h3, h4{
+h3{
+    font-size: 2.75rem;
     text-decoration: underline;
     text-decoration-color: var(--BORDER-COLOR);
 }
 h4 {
-    text-indent: 2%;
+    font-size: 2.5rem;
+}
+h5 {
+    font-size: 2rem;
+}
+h4, h5, h6 {
+    text-indent: .5%;
 }
 section {
+    background-color: #101010;
     border: 2px solid var(--BORDER-COLOR);
     border-radius: 20px;
     box-shadow: var(--SHADOW-BORDER);
@@ -58,6 +67,10 @@ section {
     text-align: justify-all;
     list-style-position: inside;
 }
+p {
+    margin: 10px;
+    padding: 8px 40px;
+}
 .ulImg {
     block-size: 100%;
     display: flex;
@@ -65,12 +78,13 @@ section {
     justify-items: center;
     margin: .5rem 15%;
 }
-ul {
+ul, ol{
     margin: 10px;
-    padding-left: 40px;
+    padding: 8px 40px;
+    list-style-position: outside;
 }
-ol {
-    padding-left: 40px;
+li {
+    padding-top: 5px;
 }
 header img {
     display: block;
@@ -78,6 +92,9 @@ header img {
     height: 100px;
     margin: 30px auto;
 
+}
+aside {
+    margin-left: 25px;
 }
 .headerH2 {
     font-size: 2.5rem;

@@ -37,12 +37,17 @@
     <main>
       <section id="HTML" class="html">
         <h2>HTML</h2>
-        <p>
+        <div>
           <h3>Basic HTML Syntax</h3>
-          <ul>
-            <li>Content is contained between an opening tag (&lt;head&gt;) and closing tag (&lt;/head&gt;).</li>
-          </ul>
-          <div>
+            <h4>&nbsp;&nbsp;&nbsp;Elements<strong>:</strong></h4>
+              <ul>
+                <li>Content is contained between an opening tag (&lt;head&gt;) and closing tag (&lt;/head&gt;).</li>
+                <li>Other common elements are &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
+                &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;, &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;, &lt;embed&gt;, &lt;details&gt;, &lt;nav&gt;,
+                &lt;output&gt;, &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, and many others.
+                </li>
+              </ul>
+            <div>
             <aside>
               <div>
                 <p>
@@ -61,9 +66,15 @@
               </div>
             </aside>
           </div>
-        </p>
-        <p>
-          <h3>&lt;head&gt;</h3>
+            <h4>Attributes</h4>
+              <ul>
+                <li>Attributes are contained in the opening tag. Attributes contain extra information about the element that you don't want to appear in the actual content.</li>
+                <li>Some common attributes are href, src, width, height, title, style, alt, lang, class. id, and many more.</li>
+              </ul>
+              <aside>* If an element is not linking correctly to a webpage there is likely a problem with the attributes. Give them a second look to make sure they're correct.</aside>
+        </div>
+        <article>
+          <h4>&lt;head&gt;</h4>
             <ul>
               <li>The head element contains information about the webpage.</li>
               <li>In this section a developer would add the following:</li>
@@ -76,64 +87,77 @@
                 <li>&lt;meta&gt; this would contain the author, keywords, a description, and information to assist a browser in rendering the page correctly.</li>
               </ul>
             </ul>
-          <h3>&lt;body&gt;</h3>
+          <h4>&lt;body&gt;</h4>
             <ul>
               <li>The body element represents the visible content shown to the user.</li>
               <li>The body contains three child elements. They are as follows:
                 <ol>
                   <li>&lt;header&gt;</li>
                     <ul>
-                      <li>Header</li>
+                      <li>The header element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</li>
                     </ul>
-                  <li>&lt;main&gt;</li>
+                  <li>&lt;main&gt; element represents the dominant content of the &lt;body&gt; of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</li>
                     <ul>
                       <li>This is where the bulk oof the content on the page will go.</li>
                     </ul>
-                  <li>&lt;footer&gt;</li>
+                  <li>&lt;footer&gt; element represents a footer for its nearest ancestor sectioning content or sectioning root element.</li>
                     <ul>
                       <li>This appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation</li>
                     </ul>
                 </ol>
               </li>
             </ul>
-        </p>
-        <p>
-          <h3>Other Common Elements</h3>
+        </article>
+        <article>
+          <h4>Other Common Elements</h4>
           <ul>
             <li>&lt;h1-6&gt; these are used as headings the lower the number the larger the text.</li>
             <li>&lt;p&gt; p stands for a paragraph.</li>
             <li>&lt;span&gt; is used to create inline division.</li>
             <li>&lt;div&gt; is used to create a division in the page.</li>
-            <li>&lt;aside&gt; </li>
+            <li>&lt;aside&gt; element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</li>
             <li>&lt;br&gt; this forces a new line in the block element</li>
+            <li>&lt;title&gt; element defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored.</li>
+            <li>&lt;article&gt; element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.</li>
+            <li>&lt;section&gt; element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</li>
+            <li>&lt;audio&gt; element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the &lt;source&gt; element: the browser will choose the most suitable one./li>
+            <li>&lt;canvas&gt; use this element with either the canvas scripting API or the WebGL API to draw graphics and animations.</li>
+            <li>&lt;datalist&gt; element contains a set of &lt;option&gt; elements that represent the permissible or recommended options available to choose from within other controls.</li>
+            <li>&lt;embed&gt; element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in.</li>
+            <li>&lt;details&gt; element creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the &lt;summary&gt; element.</li>
+            <li>&lt;nav&gt; element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</li>
+            <li>&lt;output&gt; element is a container element into which a site or app can inject the results of a calculation or the outcome of a user action.</li>
+            <li>&lt;progress&gt; element displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</li>
+            <li>&lt;video&gt; element embeds a media player which supports video playback into the document. You can use &lt;video&gt; for audio content as well, but the &lt;audio&gt; element may provide a more appropriate user experience.</li>
           </ul>
-        </p>
-        <p>
-          <h3>List Elements</h3>
+        </article>
+        <article>
+          <h4>List Elements</h4>
           <ul>
             <li>&lt;ul&gt; this is an unordered list</li>
             <li>&lt;ol&gt; this is an ordered list</li>
             <li>&lt;li&gt; is a list element that is a child to &lt;ol&gt; &lt;ul&gt;</li>
           </ul>
-        </p>
-        <p>
-          <h3>Images</h3>
+        </article>
+        <article>
+          <h4>Images</h4>
           <ul>
             <li>&lt;image&gt; this tag is used to link to a image</li>
-               <p>&nbsp;&nbsp;&nbsp;Be sure to fill in the attributes in the &lt;image&gt; of the image will not load properly.<br> &nbsp;&nbsp;&nbsp;Some common attributes are:
+            <li>&lt;img&gt; is also a void element because there's no closing tag.</li><br>
+               <div>&nbsp;&nbsp;&nbsp;* Be sure to fill in the attributes in the &lt;image&gt; of the image ir it will not load properly.<br> &nbsp;&nbsp;&nbsp;Some common attributes are:
                 <ul>
                   <li>src for the source of the image</li>
                   <li>alt this describes the image if the image fails to load</li>
                   <li>width (generally defined in pixels)</li>
                   <li>height (generally defined in pixels)</li>
                 </ul>
-              </p>
+              </div>
             <li>&lt;figure&gt; images are often nested inside a figure element</li>
             <li>&lt;figcaption&gt; is used to put a caption on the image</li>
           </ul>
-        </p>
-        <p>
-          <h3>Links or Anchors</h3>
+        </article>
+        <article>
+          <h4>Links or Anchors</h4>
           <ul>
             <li>&lt;a&gt; is an anchor tag. It is used to link elements on the same page and the web.</li>
             <li>Common Attributes</li>
@@ -141,13 +165,65 @@
                 <li>href this is where the link goes. The link doesn't go between the opening and closing anchor tags.</li>
               </ul>
           </ul>
-        </p>
+        </article>
+        <article>
+          <h3>Anatomy of an HTML Document</h3>
+          <p>
+            <ul>
+              <li>&lt;DOCTYPE html&gt; this declares the type of document to the browser.</li>
+              <li>&lt;html&gt; this element wraps the &lt;head&lt; and &lt;body&gt; elements. </li>
+            </ul>
+          </p>
+        </article>
       </section>
       <section id="CSS" class="css">
         <h2>CSS</h2>
         <h3>Basic CSS</h3>
+          <article>
+            <h4>What is CSS?</h4>
+            <ul>
+              <li>CSS is a stylesheet language used to describe the presentation of a document written in HTML or XML. </li>
+              <li>CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>CSS Ruleset</h4>
+            <ul>
+              <li>Selector indicates the element you wish to work on</li>
+              <li>Declaration is the combination of a property and a property value.</li>
+              <li>Property chooses the type of property you wish to influence or change of the selector.</li>
+              <li>Property value is how much or little you want to change the property.</li>
+            </ul>
+            <aside>**Each ruleset must be contained between curly braces {}, there must be a colon (:) between to property and property value, and each declaration must end with a semicolon (;)</aside>
+          </article>
+            <h4>Different Types of Selectors</h4>
+              <ul>
+                <li>Element Selector</li>
+                  <ul>
+                    <li>This selects all HTML elements of the specified type.</li>
+                  </ul>
+                <li>ID Selector</li>
+                  <ul>
+                    <li>The element on the page with the specified ID.</li>
+                  </ul>
+                <li>Class Selector</li>
+                  <ul>
+                    <li>The element(s) on the page with the specified class.</li>
+                  </ul>
+                <li>Attribute Selector</li>
+                  <ul>
+                    <li>The element(s) on the page with the specified attribute.</li>
+                  </ul>
+                <li>Pseudo-Class Selector</li>
+                  <ul>
+                    <li>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</li>
+                  </ul>
+              </ul>
+            <h4>Specificity</h4>
+            <p>&nbsp;&nbsp;&nbsp;These selectors give a score to the ruleset that is attempting to be implemented. The high the score indicates which rule will be applied. The specificity scoring is broken down into three categories (ID 0, Class 0, Type 0).</p>
+          </article>
         <h4>Box Styling</h4>
-        <p>
+        <article>
           <ul>
             <li>margin is the space around the border.</li>
             <li>padding is the space around the element between the border and the element</li>
@@ -159,25 +235,121 @@
                 <li><code>box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);</code></li>
               </ul>
           </ul>
-        </p>
+        </article>
+        <article>
+          <h4>Fonts and Text</h4>
+          <p>&nbsp;&nbsp;&nbsp;It is possible to link to Google fonts either in the &lt;head&gt; of the HTML or to simply import them at the beginning of the CSS document.
+            Apart from importing the font style in CSS you can change the following and many more:</p>
+          <ul>
+            <li>font-size</li>
+            <li>font-weight</li>
+            <li>font-style</li>
+            <li>text-indent</li>
+            <li>text-align</li>
+          </ul>
+        </article>
+        <article>
+          <h4>Coloring</h4>
+          <p>&nbsp;&nbsp;&nbsp;It is possible to change the background color of an element using background-color in the property section. There are few different methods to get a color hex, rgb oe rgba, and hsl.
+          both text and background can be changed in the different elements. Be sure that the foreground and background are readable. </p>
+        </article>
+        <article>
+          <h4>Manipulating a Image or Box</h4>
+          <p>&nbsp;&nbsp;&nbsp;To center an image type the property <strong><em>{display: block; margin: 0, auto;}</em></strong> when there are two property values in
+            margin the first is for top and bottom and the second is for left and right. There are also options to change the placement of boxes by doing a <em>display: flex; or display: grid;.</em>
+            This will break a element that has other nested elements in it to be placed in a formation that can be manipulated. For example, <em>display: flex; flex-flow: row nowrap; justify-content: space-evenly;.</em>
+          </p>
+        </article>
       </section>
       <section id="Git" class="git">
         <h2>Git</h2>
-        <p>
+          <h3>Basics of Git</h3>
+            <article>
+              <ul>
+                <li>
+                  <h4>Clone a repository</h4>
+                  <p>To clone a repository, use the command: <code>git clone [repository url]</code></p>
+                </li>
+                <li>
+                  <h4>Check the status of your repository</h4>
+                  <p>To check the status of your repository, use the command: <code>git status</code></p>
+                </li>
+                <li>
+                  <h4>Add changes to the staging area</h4>
+                  <p>To add changes to the staging area, use the command: <code>git add [file name]</code></p>
+                </li>
+                <li>
+                  <h4>Commit changes</h4>
+                  <p>To commit changes, use the command: <code>git commit -m "[commit message]"</code></p>
+                </li>
+                <li>
+                  <h4>Push changes to a remote repository</h4>
+                  <p>To push changes to a remote repository, use the command: <code>git push [remote name] [branch name]</code></p>
+                </li>
+                <li>
+                  <h4>Pull changes from a remote repository</h4>
+                  <p>To pull changes from a remote repository, use the command: <code>git pull</code></p>
+                </li>
+              </ul>
+            </article>
+        <article>
           <ul>
             <li>git status: checks what branch we are currently on</li>
             <li>git checkout -b branch name: creates a new branch and switches to it</li>
           </ul>
-        </p>
+        </article>
       </section>
       <section id="JavaScript" class="js">
         <h2>JavaScript</h2>
-        <p>
-          <ul>
-            <li>A variable is a named container that allows us to store data in our code.</li>
-            <li>Control flow is the order in which a computer executes code in a script.</li>
-          </ul>
-        </p>
+          <h3>Basics of JavaScript</h3>
+            <h4>Basic JS Syntax</h4>
+            <p>&nbsp;&nbsp;&nbsp;JavaScript is a scripting language that is primarily used for client-side web development. The basic syntax of JavaScript includes statements,
+              variables, and functions. JavaScript statements are executed by the browser, and are often used to change the content or style of an HTML or CSS
+              document. Variables are used to store data, and functions are used to perform specific tasks.</p>
+            <h4>Variables</h4>
+            <p>&nbsp;&nbsp;&nbsp;In JavaScript, variables are used to store data. A variable is declared using the keyword "var", "let" or "const" followed by the variable name.
+              The variable name should start with a letter or underscore, and can contain letters, numbers, and underscores. For example: <code>var x = 5;</code> or <code>let y = "Hello";</code></p>
+            <h4>Objects</h4>
+            <p>&nbsp;&nbsp;&nbsp;In JavaScript, objects are used to store multiple values in a single variable. Objects are created using curly braces {} and properties and
+              values are separated by a colon :. For example: <code>let person = {name: "John", age: 30};</code>
+            <h4>Strings</h4>
+            <p>&nbsp;&nbsp;&nbsp;JavaScript strings are used to store and manipulate text. Strings are written within quotation marks, either single or double. For example: <code>let name = "John Doe";</code>
+            <h4>Arrays</h4>
+            <p>&nbsp;&nbsp;&nbsp;JavaScript arrays are used to store multiple values in a single variable. There are different types of arrays like simple arrays, Multidimensional
+              arrays, Jagged arrays. For example: <code>let fruits = ["apple", "banana", "orange"];</code>
+            <h4>Integers</h4>
+            <p>&nbsp;&nbsp;&nbsp;JavaScript integers are whole numbers without a decimal point. For example: <code>let x = 5;</code>
+            <h4>Loops</h4>
+            <p>&nbsp;&nbsp;&nbsp;JavaScript loops are used to execute the same code multiple times. JavaScript supports for, while, do-while and for-of loops. For example:
+              <code>for (let i = 0; i < 5; i++) { console.log(i); }</code>
+            <h4>Booleans</h4>
+            <p>&nbsp;&nbsp;&nbsp;JavaScript booleans are used to represent true or false values. For example: <code>let x = true;</code> or <code>let y = false;</code>
+            <h4>Numbers</h4>
+            <p>&nbsp;&nbsp;&nbsp;JavaScript numbers are used to represent numeric values. JavaScript supports both integers and floating-point numbers. For example:
+              <code>let x = 5;</code> or <code>let y = 3.14;</code>
+            <h4>Comments</h4>
+            <p>&nbsp;&nbsp;&nbsp;JavaScript comments are used to add notes or explanations to your code. Single-line comments start with // and multi-line comments start with
+              /* and end with */. For example: <code>// This is a single-line comment</code> or <code>/* This is a
+            multi-line comment */</code>
+            <h4>Operators</h4>
+            <p>&nbsp;&nbsp;&nbsp;JavaScript operators are used to perform operations on variables and values. JavaScript supports</p>
+            <h3>Data Structures</h3>
+            <ul>
+              <li>Stack: A stack is a data structure that follows the Last In First Out (LIFO) principle. It allows elements to be added and removed only from the top of the stack.
+                This means that the last element added to the stack will be the first one to be removed.</li>
+              <li>Queue: A queue is a data structure that follows the First In First Out (FIFO) principle. It allows elements to be added at the rear and removed from the front.
+                This means that the first element added to the queue will be the first one to be removed.</li>
+              <li>Linked List: A linked list is a linear collection of data elements, called nodes, where each node points to the next node in the list.
+                The first node is called the head, and the last node is called the tail.</li>
+              <li>Set: A set is a collection of unique elements. It does not allow duplicate values and does not have any specific order.</li>
+              <li>Hash Table: A hash table is a data structure that stores data in an array-like format, but with the ability to quickly search for a specific element using a key.
+                It uses a hash function to map keys to positions in the array, allowing for fast lookups and insertions.</li>
+              <li>Tree: A tree is a data structure that is composed of nodes, where each node can have one or multiple child nodes. The topmost node is called the root,
+                and the nodes that do not have any child nodes are called leaf nodes.</li>
+              <li>Trie: A trie is a tree-like data structure that is used to store an associative array where the keys are sequences (usually strings). It is also known as a prefix tree.</li>
+              <li>Graph: A graph is a data structure that is composed of vertices (also called nodes) and edges. Vertices represent the objects in the graph, and edges represent the relationships
+                between them. Graphs can be directed (where edges have a specific direction) or undirected (where edges have no direction).</li>
+            </ul>
       </section>
       <section id="External Resources">
         <h2>Recommended External Resources</h2>
